@@ -1,0 +1,183 @@
+
+
+body, h1, ul, li, form, input, label, button, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100%;
+    overflow: auto;
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+  }
+  
+  .main-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-card, .employee-list-card {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .form-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .customer-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+  }
+  
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .form-group label {
+    align-items: start;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #555555d9;
+    font-weight: 500;
+    font: 500;
+  }
+  
+  .form-input {
+    padding: 15px;
+    border-bottom: 2px solid #352f2f;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 16px;
+    border:none;
+  }
+  
+  .submitBtn {
+    padding: 10px;
+    /* background-color: #062d0f; */
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    /* transition: background-color 0.3s; */
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  transition: all 0.4s;
+  }
+  
+  .submitBtn:hover {
+    background-color: #217588;
+  }
+  
+  .employee-list-card {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .employee-list {
+    list-style: none;
+    padding: 10px;
+  }
+  
+  .employee-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .main-container {
+      padding: 15px;
+    }
+  }
+  
+
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: right;
+  }
+
+
+  .customer-table-card {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+  
+  
+  .customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  .customer-table th, .customer-table td {
+    border: 2px solid #ddddddd9;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .customer-table th {
+    
+    background-color: #0952ba;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+
+  .customer-table td {
+    text-align: center;
+  }
+  .customer-table tr:nth-child(even) {
+    background: #1294bf;
+  }
+  .customer-table tr:nth-child(odd) {
+    background: #1294bf;
+  }
+  
+  .customer-table tr:hover {
+    background-color: #0ecedc;
+  }
+  
